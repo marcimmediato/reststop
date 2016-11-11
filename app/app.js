@@ -1,29 +1,24 @@
 // "routes"
 
 $(function(){
+  $('#origin').css('visibility','hidden')
+  $('#destination').css('visibility','hidden')
 
-  () => {
-    event.preventDefault()
-    populateLines()
-  }
-
-  // reveal train line selector
-  $("document").on("load", () => {
-    event.preventDefault()
-    populateLines()
-  })
+  populateLines()
 
   // reveal origin selector
-  $('#trainSelect').on('submit', () => {
+  $('#trainSelect').change( () => {
     event.preventDefault()
+    $('#origin').css('visibility','visible')
     populateOriginStops()
   })
 
   // reveal destination selector
-  $('#originSelect').on('submit', () => {
+  $('#originSelect').change( () => {
+    let value = $('#originSelect').val()
+    $('#destination').css('visibility','visible')
     event.preventDefault()
-    populateOriginStops()
+    populateDestinationStops(value)
   })
-
 
 })
