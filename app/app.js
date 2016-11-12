@@ -1,6 +1,11 @@
 // "routes"
 
 $(function(){
+
+  var currentLine
+  var origin
+  var destination
+
   $('#origin').css('visibility','hidden')
   $('#destination').css('visibility','hidden')
   $('#chooser').css('visibility', 'hidden')
@@ -11,23 +16,32 @@ $(function(){
   $('#trainSelect').change( () => {
     event.preventDefault()
     $('#origin').css('visibility','visible')
-    populateOriginStops()
+    currentLine = populateOriginStops()
+
   })
 
   // reveal destination selector
   $('#originSelect').change( () => {
-    let value = $('#originSelect').val()
-    alert(value)
+     let value = parseInt($('#originSelect').val())
+     origin = currentLine.getStop(value)
     $('#destination').css('visibility','visible')
     event.preventDefault()
-    populateDestinationStops(value)
+    populateDestinationStops(value, currentLine)
   })
 
-  //reveal search box
+  //reveal search box and make trip
   $('#destinationSelect').change( () => {
+
+    let value = parseInt($('#destinationSelect').val())
+    destination = currentLine.getStop(value)
     event.preventDefault()
     $('#chooser').css('visibility', 'visible')
+    debugger
+    let trip = new Trip(currentLine, origin, destination)
+
   })
+
+
 
   //capture search data
   $('#chooserButton').click( () => {
