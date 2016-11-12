@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wcpines/reststop/issues"
   },
-  "homepage": "https://github.com/wcpines/reststop#readme"
+  "homepage": "https://github.com/wcpines/reststop#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0"
+  }
 }
