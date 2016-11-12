@@ -36,9 +36,11 @@ $(function(){
     destination = currentLine.getStop(value)
     event.preventDefault()
     $('#chooser').css('visibility', 'visible')
-    debugger
-    let trip = new Trip(currentLine, origin, destination)
 
+    let trip = new Trip(currentLine, origin, destination)
+    trip.stops.map((stop) =>{
+      $('#trip').append(`<h3>${stop.name}</h3><br>`)
+    })
   })
 
 
