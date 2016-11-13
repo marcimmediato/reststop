@@ -1,4 +1,4 @@
-const Train1 = [ 
+const Train1 = [
   {name: "Van Cortlandt Park - 242 St", latLong: [40.889248,-73.898583]},
   {name: "238 St", latLong: [40.884667,-73.90087]},
   {name: "231 St", latLong: [40.878856,-73.904834]},
@@ -64,6 +64,12 @@ const Train2 = [
   {name: "125 St", latLong: [40.807754,-73.945495]},
   {name: "116 St", latLong: [40.802098,-73.949625]},
   {name: "Central Park North (110 St)", latLong: [40.799075,-73.951822]},
+  {name: "96 St", latLong: [40.793919,-73.972323]},
+  {name: "72 St", latLong: [40.778453,-73.98197]},
+  {name: "Times Sq - 42 St", latLong: [40.75529,-73.987495]},
+  {name: "34 St - Penn Station", latLong: [40.750373,-73.991057]},
+  {name: "14 St", latLong: [40.737826,-74.000201]},
+  {name: "Chambers St", latLong: [40.715478,-74.009266]},
   {name: "Park Pl", latLong: [40.713051,-74.008811]},
   {name: "Fulton St", latLong: [40.709416,-74.006571]},
   {name: "Wall St", latLong: [40.706821,-74.0091]},
@@ -94,11 +100,50 @@ const Train2 = [
   {name: "Van Siclen Av", latLong: [40.665449,-73.889395]},
   {name: "New Lots Av", latLong: [40.666235,-73.884079]}
 
-] 
+]
 
 const Train3 = [
   {name: "Harlem - 148 St", latLong: [40.82388,-73.93647]},
   {name: "145 St", latLong: [40.820421,-73.936245]}
+  {name: "135 St", latLong: [40.814229,-73.94077]},
+  {name: "125 St", latLong: [40.807754,-73.945495]},
+  {name: "116 St", latLong: [40.802098,-73.949625]},
+  {name: "Central Park North (110 St)", latLong: [40.799075,-73.951822]},
+  {name: "96 St", latLong: [40.793919,-73.972323]},
+  {name: "72 St", latLong: [40.778453,-73.98197]},
+  {name: "Times Sq - 42 St", latLong: [40.75529,-73.987495]},
+  {name: "34 St - Penn Station", latLong: [40.750373,-73.991057]},
+  {name: "14 St", latLong: [40.737826,-74.000201]},
+  {name: "Chambers St", latLong: [40.715478,-74.009266]},
+  {name: "Park Pl", latLong: [40.713051,-74.008811]},
+  {name: "Fulton St", latLong: [40.709416,-74.006571]},
+  {name: "Wall St", latLong: [40.706821,-74.0091]},
+  {name: "Clark St", latLong: [40.697466,-73.993086]},
+  {name: "Borough Hall", latLong: [40.693219,-73.989998]},
+  {name: "Hoyt St", latLong: [40.690545,-73.985065]},
+  {name: "Nevins St", latLong: [40.688246,-73.980492]},
+  {name: "Atlantic Av - Barclays Ctr", latLong: [40.684359,-73.977666]},
+  {name: "Bergen St", latLong: [40.680829,-73.975098]},
+  {name: "Grand Army Plaza", latLong: [40.675235,-73.971046]},
+  {name: "Eastern Pkwy - Brooklyn Museum", latLong: [40.671987,-73.964375]},
+  {name: "Franklin Av", latLong: [40.670682,-73.958131]},
+  {name: "President St", latLong: [40.667883,-73.950683]},
+  {name: "Sterling St", latLong: [40.662742,-73.95085]},
+  {name: "Winthrop St", latLong: [40.656652,-73.9502]},
+  {name: "Church Av", latLong: [40.650843,-73.949575]},
+  {name: "Beverly Rd", latLong: [40.645098,-73.948959]},
+  {name: "Newkirk Av", latLong: [40.639967,-73.948411]},
+  {name: "Flatbush Av - Brooklyn College", latLong: [40.632836,-73.947642]},
+  {name: "Nostrand Av", latLong: [40.669847,-73.950466]},
+  {name: "Kingston Av", latLong: [40.669399,-73.942161]},
+  {name: "Crown Hts - Utica Av", latLong: [40.668897,-73.932942]},
+  {name: "Sutter Av - Rutland Rd", latLong: [40.664717,-73.92261]},
+  {name: "Saratoga Av", latLong: [40.661453,-73.916327]},
+  {name: "Rockaway Av", latLong: [40.662549,-73.908946]},
+  {name: "Junius St", latLong: [40.663515,-73.902447]},
+  {name: "Pennsylvania Av", latLong: [40.664635,-73.894895]},
+  {name: "Van Siclen Av", latLong: [40.665449,-73.889395]},
+  {name: "New Lots Av", latLong: [40.666235,-73.884079]}
 ];
 
 const Train4 = [
@@ -116,6 +161,12 @@ const Train4 = [
   {name: "161 St - Yankee Stadium", latLong: [40.827994,-73.925831]},
   {name: "149 St - Grand Concourse", latLong: [40.818375,-73.927351]},
   {name: "138 St - Grand Concourse", latLong: [40.813224,-73.929849]},
+  {name: "125 St", latLong: [40.804138,-73.937594]},
+  {name: "86 St", latLong: [40.779492,-73.955589]},
+  {name: "59 St", latLong: [40.762526,-73.967967]},
+  {name: "Grand Central - 42 St", latLong: [40.751776,-73.976848]},
+  {name: "14 St - Union Sq", latLong: [40.734673,-73.989951]},
+  {name: "Brooklyn Bridge - City Hall", latLong: [40.713065,-74.004131]},
   {name: "Fulton St", latLong: [40.710368,-74.009509]},
   {name: "Wall St", latLong: [40.707557,-74.011862]},
   {name: "Bowling Green", latLong: [40.704817,-74.014065]},
