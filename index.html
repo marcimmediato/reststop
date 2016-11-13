@@ -30,22 +30,27 @@
     <div id = "chooser">
       <h3> Enter a category of food and we'll find it for you along the way</h3>
       <input id="foodChoice" type="text">
-      <button id="chooserButton" value="Search">
+      <button id="chooserButton" value="Search"></button>
     </div>
 
     <div id = "trip"></div>
 
     <div id="projectScripts">
       <script src="./app/jquery-3.1.1.min.js"> </script>
+      <script src="./app/adapters/fourSquareAdapter.js"> </script>
       <script src="./app/app.js"> </script>
-      <script src="./app/controllers/searchesController.js"> </script>
-      <script src="./app/controllers/populateTrainInfo.js"> </script>
-      <script src="./app/models/stop.js"> </script>
-      <script src="./node_modules/oauth-signature/dist/oauth-signature.js"> </script>
-      <script src="./authCreds.js"> </script>
-      <script src="./app/adapters/fourSquareAPI.js"> </script>
+      <script src="./app/data/seeds.js"> </script>
+      <script src="./app/data/store.js"> </script>
+      <script src="./app/controllers/queriesController.js"> </script>
+      <script src="./app/controllers/trainInfoController.js"> </script>
+      <script src="./app/controllers/restaurantsController.js"> </script>
+      <script src="./app/controllers/tripsController.js"> </script>
       <script src="./app/models/line.js"> </script>
+      <script src="./app/models/restaurant.js"> </script>
+      <script src="./app/models/stop.js"> </script>
       <script src="./app/models/trip.js"> </script>
+      <script src="./authCreds.js"> </script>
+      <script src="./node_modules/oauth-signature/dist/oauth-signature.js"> </script>
       <!-- <script src='./app/models/line.js> </script> -->
       <!-- <script type="text/javascript"> -->
 <!--   console.log(signature); -->
