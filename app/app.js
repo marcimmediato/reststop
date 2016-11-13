@@ -30,6 +30,11 @@ $(function(){
     $('#destination').css('visibility','visible')
     event.preventDefault()
     populateDestinationStops(value, currentLine)
+
+    if (currentTrip !== undefined){
+      currentTrip = new Trip(currentLine, origin, destination)
+      displayTrip(currentTrip)
+    }
   })
 
   //reveal search box and make trip
@@ -41,9 +46,7 @@ $(function(){
     $('#chooser').css('visibility', 'visible')
 
     currentTrip = new Trip(currentLine, origin, destination)
-    currentTrip.stops.map((stop) =>{
-      $('#trip').append(`<div id=stop-${stop.id}><h3>Stop: ${stop.name}</h3></div><br>`)
-    })
+    displayTrip(currentTrip)
   })
 
 
