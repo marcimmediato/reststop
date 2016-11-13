@@ -1,8 +1,14 @@
 // "routes"
 
 $(function(){
+
+  var currentLine
+  var origin
+  var destination
+
   $('#origin').css('visibility','hidden')
   $('#destination').css('visibility','hidden')
+  $('#chooser').css('visibility', 'hidden')
 
   populateLines()
 
@@ -10,12 +16,14 @@ $(function(){
   $('#trainSelect').change( () => {
     event.preventDefault()
     $('#origin').css('visibility','visible')
-    populateOriginStops()
+    currentLine = populateOriginStops()
+
   })
 
   // reveal destination selector
   $('#originSelect').change( () => {
-    let value = $('#originSelect').val()
+     let value = parseInt($('#originSelect').val())
+     origin = currentLine.getStop(value)
     $('#destination').css('visibility','visible')
     event.preventDefault()
     populateDestinationStops(value, currentLine)
