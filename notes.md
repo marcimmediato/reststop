@@ -9,7 +9,7 @@
 1. On submit: Presented with n * 5 options for restaurants, where N is the number of stops between origin and destination.
   - Restaurants should be hyperlinked.
 
-Our first pass will use just the yelp API.  
+Our first pass will use just the ~~yelp~~ foursquare API.  
 
 # Models and relationships
 
