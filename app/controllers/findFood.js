@@ -3,6 +3,7 @@ function findFood(searchTerm) {
     let stopLat = stop.latLong[0];
     let stopLong = stop.latLong[1];
     let stopId = stop.id;
-    restaurantsAdapter(searchTerm, stopLat, stopLong, stopId);
+    let data = fourSquareAdapter(authParams, searchTerm, stopLat, stopLong);
+    debugger
   })
 }
