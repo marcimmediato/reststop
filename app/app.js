@@ -1,10 +1,13 @@
 // "routes"
 
+var currentLine
+var origin
+var destination
+var currentTrip
+
 $(function(){
 
-  var currentLine
-  var origin
-  var destination
+
 
   $('#origin').css('visibility','hidden')
   $('#destination').css('visibility','hidden')
@@ -27,6 +30,11 @@ $(function(){
     $('#destination').css('visibility','visible')
     event.preventDefault()
     populateDestinationStops(value, currentLine)
+
+    if (currentTrip !== undefined){
+      currentTrip = new Trip(currentLine, origin, destination)
+      displayTrip(currentTrip)
+    }
   })
 
   //reveal search box and make trip
@@ -37,10 +45,8 @@ $(function(){
     event.preventDefault()
     $('#chooser').css('visibility', 'visible')
 
-    let trip = new Trip(currentLine, origin, destination)
-    trip.stops.map((stop) =>{
-      $('#trip').append(`<h3>${stop.name}</h3><br>`)
-    })
+    currentTrip = new Trip(currentLine, origin, destination)
+    displayTrip(currentTrip)
   })
 
 
@@ -48,7 +54,9 @@ $(function(){
   //capture search data
   $('#chooserButton').click( () => {
     let searchTerm = $('#foodChoice').val()
-    executeSearch(searchTerm);
+
+    findFood(searchTerm);
+
   })
 
 })
