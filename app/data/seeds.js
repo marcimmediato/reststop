@@ -104,7 +104,7 @@ const Train2 = [
 
 const Train3 = [
   {name: "Harlem - 148 St", latLong: [40.82388,-73.93647]},
-  {name: "145 St", latLong: [40.820421,-73.936245]}
+  {name: "145 St", latLong: [40.820421,-73.936245]},
   {name: "135 St", latLong: [40.814229,-73.94077]},
   {name: "125 St", latLong: [40.807754,-73.945495]},
   {name: "116 St", latLong: [40.802098,-73.949625]},
