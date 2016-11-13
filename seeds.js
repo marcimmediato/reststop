@@ -170,7 +170,11 @@ const Train4 = [
   {name: "Fulton St", latLong: [40.710368,-74.009509]},
   {name: "Wall St", latLong: [40.707557,-74.011862]},
   {name: "Bowling Green", latLong: [40.704817,-74.014065]},
-  {name: "Borough Hall", latLong: [40.692404,-73.990151]}
+  {name: "Borough Hall", latLong: [40.692404,-73.990151]},
+  {name: "Nevins St", latLong: [40.688246,-73.980492]},
+  {name: "Atlantic Av - Barclays Ctr", latLong: [40.684359,-73.977666]},
+  {name: "Franklin Av", latLong: [40.670682,-73.958131]},
+  {name: "Crown Hts - Utica Av", latLong: [40.668897,-73.932942]},
 ];
 
 const Train5 = [
@@ -178,7 +182,8 @@ const Train5 = [
   {name: "Baychester Av", latLong: [40.878663,-73.838591]},
   {name: "Gun Hill Rd", latLong: [40.869526,-73.846384]},
   {name: "Pelham Pkwy", latLong: [40.858985,-73.855359]},
-  {name: "Morris Park", latLong: [40.854364,-73.860495]}
+  {name: "Morris Park", latLong: [40.854364,-73.860495]},
+  {name: "E 180 St", latLong: [40.841894,-73.873488]},
 ];
 
 const Train6 = [
@@ -434,7 +439,16 @@ const TrainG = [
   {name: "Bedford - Nostrand Avs", latLong: [40.689627,-73.953522]},
   {name: "Classon Av", latLong: [40.688873,-73.96007]},
   {name: "Clinton - Washington Avs", latLong: [40.688089,-73.966839]},
-  {name: "Fulton St", latLong: [40.687119,-73.975375]}
+  {name: "Fulton St", latLong: [40.687119,-73.975375]},
+  {name: "Hoyt - Schermerhorn Sts", latLong: [40.688484,-73.985001]},
+  {name: "Bergen St", latLong: [40.686145,-73.990862]},
+  {name: "Carroll St", latLong: [40.680303,-73.995048]},
+  {name: "Smith - 9 Sts", latLong: [40.67358,-73.995959]},
+  {name: "4 Av", latLong: [40.670272,-73.989779]},
+  {name: "7 Av", latLong: [40.666271,-73.980305]},
+  {name: "15 St - Prospect Park", latLong: [40.660365,-73.979493]},
+  {name: "Fort Hamilton Pkwy", latLong: [40.650782,-73.975776]},
+  {name: "Church Av", latLong: [40.644041,-73.979678]}
 ];
 
 const TrainH = [
