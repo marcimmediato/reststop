@@ -1,12 +1,19 @@
-var authURL = 'https://api.yelp.com/oauth2/token'
-
 function auth(authParams){
   return $.ajax({
-    method: "POST",
-    contentType: 'application/x-www-form-urlencoded',
-    dataType: 'jsonp',
     crossDomain: true,
-    url: `${authURL}?grant_type=${authParams.grant_type}&client_id=${authParams.app_id}&client_secret=${authParams.app_secret}`
+    url: 'https://api.yelp.com/oauth2/token',
+    contentType: 'application/x-www-form-urlencoded',
+    method: "POST",
+    beforeSend: function(xhr){
+      xhr.setRequestHeader(
+      {
+        'grant_type:': `client_credentials`,
+        'client_id': `${authParams.app_id}`,
+        'client_secret': `${authParams.app_secret}`
+      }
+    )}
+    // dataType: 'jsonp',
+    // url: `${authURL}?grant_type=${authParams.grant_type}&client_id=${authParams.app_id}&client_secret=${authParams.app_secret}`
   }).done(function( response ) {
     console.log(response)
   })
