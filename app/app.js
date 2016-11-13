@@ -48,7 +48,7 @@ $(function(){
   //capture search data
   $('#chooserButton').click( () => {
     let searchTerm = $('#foodChoice').val()
-    alert(searchTerm)
+    executeSearch(searchTerm);
   })
 
 })

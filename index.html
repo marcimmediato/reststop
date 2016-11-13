@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
 
-  <h2>Select a train</h2>
-  <select id="trainSelect">
-
-  </select>
-
-  <div id="origin">
-    <h3>Select an origin stop</h3>
-
-    <select id="originSelect">
+    <h2>Select a train</h2>
+    <select id="trainSelect">
 
     </select>
-  </div>
 
-  <div id="destination">
-  <h3>Select a destination stop</h3>
+    <div id="origin">
+      <h3>Select an origin stop</h3>
 
-  <select id="destinationSelect">
+      <select id="originSelect">
 
-  </select>
-</div>
-  <div id = "chooser">
-    <h3> Enter a category of food and we'll find it for you along the way</h3>
-    <input id="foodChoice" type="text">
-    <button id="chooserButton" value="Search">
-  </div>
+      </select>
+    </div>
 
-  <div id = "trip"></div>
+    <div id="destination">
+      <h3>Select a destination stop</h3>
 
-  <div id="projectScripts">
-    <script src="./app/jquery-3.1.1.min.js"> </script>
-    <script src="./app/app.js"> </script>
-    <script src="./app/controllers/populateTrainInfo.js"> </script>
-    <script src="./app/models/stop.js"> </script>
-    <script src="./node_modules/oauth-signature/dist/oauth-signature.js"> </script>
-    <script src="./yelpCreds.js"> </script>
-    <script src="./auth.js"> </script>
+      <select id="destinationSelect">
+
+      </select>
+    </div>
+    <div id = "chooser">
+      <h3> Enter a category of food and we'll find it for you along the way</h3>
+      <input id="foodChoice" type="text">
+      <button id="chooserButton" value="Search">
+    </div>
+
+    <div id = "trip"></div>
+
+    <div id="projectScripts">
+      <script src="./app/jquery-3.1.1.min.js"> </script>
+      <script src="./app/app.js"> </script>
+      <script src="./app/controllers/searchesController.js"> </script>
+      <script src="./app/controllers/populateTrainInfo.js"> </script>
+      <script src="./app/models/stop.js"> </script>
+      <script src="./node_modules/oauth-signature/dist/oauth-signature.js"> </script>
+      <script src="./authCreds.js"> </script>
+      <script src="./app/adapters/fourSquareAPI.js"> </script>
       <script src="./app/models/line.js"> </script>
       <script src="./app/models/trip.js"> </script>
-    <!-- <script src='./app/models/line.js> </script> -->
-    <!-- <script type="text/javascript"> -->
-      <!-- console.log(signature); -->
-    <!-- </script> -->
-  </div>
-</body>
+      <!-- <script src='./app/models/line.js> </script> -->
+      <!-- <script type="text/javascript"> -->
+<!--   console.log(signature); -->
+<!-- </script> -->
+    </div>
+  </body>
 </html>
