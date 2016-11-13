@@ -1,10 +1,13 @@
 // "routes"
 
+var currentLine
+var origin
+var destination
+var currentTrip
+
 $(function(){
 
-  var currentLine
-  var origin
-  var destination
+
 
   $('#origin').css('visibility','hidden')
   $('#destination').css('visibility','hidden')
@@ -37,9 +40,9 @@ $(function(){
     event.preventDefault()
     $('#chooser').css('visibility', 'visible')
 
-    let trip = new Trip(currentLine, origin, destination)
-    trip.stops.map((stop) =>{
-      $('#trip').append(`<h3>${stop.name}</h3><br>`)
+    currentTrip = new Trip(currentLine, origin, destination)
+    currentTrip.stops.map((stop) =>{
+      $('#trip').append(`<div id=stop-${stop.id}><h3>Stop: ${stop.name}</h3></div><br>`)
     })
   })
 
@@ -48,7 +51,7 @@ $(function(){
   //capture search data
   $('#chooserButton').click( () => {
     let searchTerm = $('#foodChoice').val()
-    alert(searchTerm)
+    findFood(searchTerm);
   })
 
 })

@@ -1,15 +1,15 @@
-class Trip {
+const Trip = (function(){
 
-  constructor(line, firstStop, lastStop) {
+  return class Trip {
 
-    let startId = firstStop.id
-    let endId = lastStop.id - 1
-    let thisTrip = []
-    for(let i = startId;i<endId;i++){
-
-      thisTrip.push(line.stops[i])
+    constructor(line, firstStop, lastStop) {
+      let startId = firstStop.id
+      let endId = lastStop.id - 1
+      let thisTrip = []
+      for(let i = startId;i<endId;i++){
+        thisTrip.push(line.stops[i])
+      }
+      this.stops = thisTrip
     }
-    this.stops = thisTrip
   }
-
-}
+}())

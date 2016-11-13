@@ -3,7 +3,7 @@
 // When the ajax request is completed, find the img,
   // someData.artists.items[0].images[0].url
 
-function restaurantsAdapter(searchTerm){
+function restaurantsAdapter(searchTerm, stopLat, stopLong, stopId){
    return $.ajax({
   method: "GET",
   url: `https://api.spotify.com/v1/search?q=${searchTerm}&type=artist`
