@@ -1,4 +1,4 @@
-function findFood(searchTerm) {
+function search(searchTerm) {
   store.restaurants = []
   currentTrip.stops.forEach((stop) => {
     let stopLat = stop.latLong[0];
