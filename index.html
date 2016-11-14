@@ -11,13 +11,13 @@
     <!-- <h2><font face="vulf mono">Welcome to</font></h2> -->
     <h1 > RestStop </h1>
 
-    <h2>Select a train</h2>
+    <h3>Select a train</h3>
     <select id="trainSelect">
 
     </select>
 
     <div id="origin">
-      <h3>Select an origin stop</h3>
+      <h4>Select an origin stop</h4>
 
       <select id="originSelect">
 
@@ -26,27 +26,25 @@
     </div>
 
     <div id="destination">
-      <h3>Select a destination stop</h3>
+      <h4>Select a destination stop</h4>
 
       <select id="destinationSelect">
 
       </select>
     </div>
     <div id = "chooser">
-      <h3> Enter a category of food and we'll find it for you along the way</h3>
+      <h4> Enter a category of food and we'll find it for you along the way</h4>
       <input id="foodChoice" type="text">
       <button class='btn' id="chooserButton">Search</button>
+      <div id="songRequest">
+        <button class='btn' id="songButton">Edible/Audible!</button>
+        <div id="songContent">
+        </div>
+      </div>
     </div>
 
     <div id = "trip"></div>
 
-    <div id="songRequest">
-      <button class='btn' id="songButton">Edible/Audible!</button>
-
-      <div id="songContent">
-      </div>
-
-    </div>
 
     <div id="projectScripts">
       <script src="./app/jquery-3.1.1.min.js"> </script>
