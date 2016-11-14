@@ -1,14 +1,20 @@
+// iterate over Trains array in seeds and add the line name to the drop-down
 function populateLines(){
-  let html = "<option value='---'>---</option> <option value='l'>L</option>";
-  $('#trainSelect').append(html)
+  let blankChoice = "<option value='---'>---</option>"
+  $('#trainSelect').append(blankChoice)
+  Trains.forEach((train) => {
+    $('#trainSelect').append(`<option>${train[0].line}</option>"`)
+  })
 }
 
 function populateOriginStops(){
 
-  var blank = "<option value='---'>---</option>";
+  let lineChoice = $('#trainSelect').val();
+  let blank = "<option value='---'>---</option>"; 
   $('#originSelect').append(blank)
+  var line = linesObject[lineChoice]
   let stopList = []
-  var stops = LTrain.map( (stop) => {
+  var stops = line.map( (stop) => {
     let stationStop = new Stop(stop)
     let html = `<option value='${stationStop.id}'>${stationStop.name}</option>`
     $('#originSelect').append(html)

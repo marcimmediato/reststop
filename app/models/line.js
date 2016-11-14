@@ -20,3 +20,25 @@ class Line {
   //   })
   // }
 }
+
+const linesObject = {
+  "1": Train1,
+  "2": Train2,
+  "3": Train3,
+  "4": Train4,
+  "5": Train5,
+  "6": Train6,
+  "7": Train7,
+  "A": TrainA,
+  "B": TrainB,
+  "D": TrainD,
+  "F": TrainF,
+  "G": TrainG,
+  "H": TrainH,
+  "J": TrainJ,
+  "L": TrainL,
+  "M": TrainM,
+  "Q": TrainQ,
+  "R": TrainR
+}
+
