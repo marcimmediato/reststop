@@ -12,6 +12,7 @@ $(function(){
   $('#origin').css('visibility','hidden')
   $('#destination').css('visibility','hidden')
   $('#chooser').css('visibility', 'hidden')
+  $('#songRequest').css('visibility', 'hidden')
 
   populateLines()
 
@@ -60,8 +61,15 @@ $(function(){
     let searchTerm = $('#foodChoice').val()
     findFood(searchTerm);
     setTimeout(function(){ populateStops() }, 1000)
+    $('#songRequest').css('visibility', 'visible')
+  })
 
 
+  // option for song
+
+  $('#songButton').click( () => {
+    let searchTerm = $('#foodChoice').val()
+    spotifyAdapter(searchTerm);
   })
 
 })
