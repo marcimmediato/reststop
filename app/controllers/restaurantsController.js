@@ -12,12 +12,13 @@ function buildRestaurant(venues, stopId){
 function populateStops() {
   store.restaurants.forEach((restaurant) => {
     if (restaurant.address !== undefined) {
-      $(`#stop-${restaurant.stopId} ul`).append(`<li><strong>${restaurant.name}</strong> - <a href='https://www.google.com/maps/@${restaurant.latitude},${restaurant.longitude}'>Map It</a> - ${restaurant.checkins} Check-Ins</li>`)
+      $(`#stop-${restaurant.stopId} ul`).append(`<li><strong>${restaurant.name}</strong> - <a href='https://www.google.com/maps?q=${restaurant.latitude},${restaurant.longitude}' target='_blank'>Map It</a> - ${restaurant.checkins} Check-Ins</li>`)
     }
   });
 
   store.restaurants.forEach((restaurant) => {
     if ($(`#stop-${restaurant.stopId} ul li`).length === 0) {
+
       $(`#stop-${restaurant.stopId} ul`).append('<p>No restaurants found.</p>');
     }
   });

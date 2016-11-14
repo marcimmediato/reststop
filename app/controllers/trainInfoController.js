@@ -10,7 +10,7 @@ function populateLines(){
 function populateOriginStops(){
 
   let lineChoice = $('#trainSelect').val();
-  let blank = "<option value='---'>---</option>"; 
+  let blank = "<option value='---'>---</option>";
   $('#originSelect').append(blank)
   var line = linesObject[lineChoice]
   let stopList = []
@@ -20,8 +20,8 @@ function populateOriginStops(){
     $('#originSelect').append(html)
     stopList.push(stationStop)
   })
-  let lLine = new Line('L', stopList)
-  return lLine
+  let curLine = new Line(lineChoice, stopList)
+  return curLine
 }
 
 function populateDestinationStops(value, currentLine){
