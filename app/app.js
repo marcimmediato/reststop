@@ -9,6 +9,8 @@ $(function(){
 
 
 
+  // hide forms until explicitly revealed
+
   $('#origin').css('visibility','hidden')
   $('#destination').css('visibility','hidden')
   $('#chooser').css('visibility', 'hidden')
@@ -28,6 +30,10 @@ $(function(){
 
   // reveal destination selector
   $('#originSelect').change( () => {
+
+    $('#songRequest').css('visibility', 'hidden')
+    $('#songContent').empty()
+
      let value = parseInt($('#originSelect').val())
      origin = currentLine.getStop(value)
     $('#destination').css('visibility','visible')
@@ -42,6 +48,9 @@ $(function(){
 
   //reveal search box and make trip
   $('#destinationSelect').change( () => {
+
+    $('#songRequest').css('visibility', 'hidden')
+    $('#songContent').empty()
 
     let value = parseInt($('#destinationSelect').val())
     destination = currentLine.getStop(value)

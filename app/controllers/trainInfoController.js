@@ -15,6 +15,7 @@ function reset() {
   $('#destinationSelect').children().remove();
   $('#trip').children().remove()
   $('#foodChoice').val(' ')
+  $('#songRequest').css('visibility', 'hidden')
   store.restaurants = []
   store.stops = []
   line = []
