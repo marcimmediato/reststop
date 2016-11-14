@@ -15,5 +15,5 @@ function spotifyAdapter(searchTerm){
 
 function addSong(name, link, artist){
   html=`<b>Listen a tasty song by ${artist}:</b><br><em><a href='${link}' target='_blank'>${name}</a></em>`
-  $('#songRequest').empty().append(html)
+  $('#songContent').append(html)
 }

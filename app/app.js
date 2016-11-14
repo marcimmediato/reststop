@@ -19,6 +19,7 @@ $(function(){
   // reveal origin selector
   $('#trainSelect').change( () => {
     reset()
+
     event.preventDefault()
     $('#origin').css('visibility','visible')
     currentLine = populateOriginStops()
@@ -57,7 +58,6 @@ $(function(){
   //capture search data
   $('#chooserButton').click( () => {
 
-
     origin = currentLine.getStop(parseInt($('#originSelect').val()))
     destination = currentLine.getStop(parseInt($('#destinationSelect').val()))
 
@@ -65,10 +65,14 @@ $(function(){
 
 
     displayTrip(currentTrip)
+
     let searchTerm = $('#foodChoice').val()
     findFood(searchTerm);
     setTimeout(function(){ populateStops() }, 1000)
+
+    $('#songContent').empty()
     $('#songRequest').css('visibility', 'visible')
+
   })
 
 
