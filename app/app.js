@@ -55,6 +55,6 @@ $(function(){
   $('#chooserButton').click( () => {
     let searchTerm = $('#foodChoice').val()
     findFood(searchTerm);
+    setTimeout(function(){ populateStops() }, 1000)
   })
-
 })
