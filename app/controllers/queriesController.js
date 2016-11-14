@@ -4,5 +4,5 @@ function findFood(searchTerm) {
     let stopLong = stop.latLong[1];
     let stopId = stop.id;
     fourSquareAdapter(searchTerm, stopLat, stopLong, stopId);
-  })
+  });
 }
