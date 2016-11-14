@@ -2,15 +2,16 @@ const Trip = (function(){
 
   return class Trip {
     constructor(line, firstStop, lastStop) {
-      let startId = firstStop.id
-      let endId = lastStop.id
+      
+      let startNum = firstStop.stopNum
+      let endNum = lastStop.stopNum
       let thisTrip = []
-      if (startId < endId) {
-        for(let i = startId-1;i<endId;i++){
+      if (startNum < endNum) {
+        for(let i = startNum;i<=endNum;i++){
           thisTrip.push(line.stops[i])
         }
       } else {
-        for(let i = startId-1;i>=endId-1;i--){
+        for(let i = startNum;i>=endNum;i--){
           thisTrip.push(line.stops[i])
         }
       }

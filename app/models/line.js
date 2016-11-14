@@ -6,9 +6,9 @@ class Line {
     // store.push(this)
   }
 
-  getStop(id){
+  getStop(stopNum){
     let foundStop =  this.stops.find((el) => {
-      return el.id === id
+      return el.stopNum === stopNum
 
     })
 
@@ -41,4 +41,3 @@ const linesObject = {
   "Q": TrainQ,
   "R": TrainR
 }
-

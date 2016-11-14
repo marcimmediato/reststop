@@ -7,21 +7,41 @@ function populateLines(){
   })
 }
 
-function populateOriginStops(){
+function reset() {
+  $('#origin').css('visibility','hidden')
+  $('#destination').css('visibility','hidden')
+  $('#chooser').css('visibility', 'hidden')
+  $('#originSelect').children().remove();
+  $('#destinationSelect').children().remove();
+  $('#trip').children().remove()
+  $('#foodChoice').val(' ')
+  store.restaurants = []
+  store.stops = []
+  line = []
+  currentTrip = undefined
+  currentLine = undefined
 
+}
+
+function populateOriginStops(){
   let lineChoice = $('#trainSelect').val();
   let blank = "<option value='---'>---</option>";
   $('#originSelect').append(blank)
   var line = linesObject[lineChoice]
+
   let stopList = []
   var stops = line.map( (stop) => {
     let stationStop = new Stop(stop)
-    let html = `<option value='${stationStop.id}'>${stationStop.name}</option>`
+
+    let html = `<option value='${stationStop.stopNum}'>${stationStop.name}</option>`
     $('#originSelect').append(html)
     stopList.push(stationStop)
   })
+
+
   let curLine = new Line(lineChoice, stopList)
   return curLine
+
 }
 
 function populateDestinationStops(value, currentLine){
@@ -30,8 +50,8 @@ function populateDestinationStops(value, currentLine){
   $('#destinationSelect').append(blank)
 
   var stops = currentLine.stops.map( (stop) => {
-    if (stop.id !== value){
-      let html = `<option value='${stop.id}'>${stop.name}</option>`
+    if (stop.stopNum !== value){
+      let html = `<option value='${stop.stopNum}'>${stop.name}</option>`
       $('#destinationSelect').append(html)
     }
   })
