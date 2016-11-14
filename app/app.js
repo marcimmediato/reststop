@@ -55,9 +55,12 @@ $(function(){
 
   //capture search data
   $('#chooserButton').click( () => {
+
+    origin = currentLine.getStop(parseInt($('#originSelect').val()))
+    destination = currentLine.getStop(parseInt($('#destinationSelect').val()))
     debugger
     currentTrip = new Trip(currentLine, origin, destination)
-    debugger
+
     displayTrip(currentTrip)
     let searchTerm = $('#foodChoice').val()
     findFood(searchTerm);

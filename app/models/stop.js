@@ -9,7 +9,9 @@ const Stop = (function(){
       this.name = object.name;
       this.latLong = object.latLong;
       this.id = ++id
+      this.stopNum = line.length
       line.push(this)
+
     }
   }
 

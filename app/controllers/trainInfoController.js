@@ -16,6 +16,10 @@ function reset() {
   $('#trip').children().remove()
   $('#foodChoice').val(' ')
   store.restaurants = []
+  store.stops = []
+  line = []
+  currentTrip = undefined
+  currentLine = undefined
 
 }
 
@@ -24,15 +28,16 @@ function populateOriginStops(){
   let blank = "<option value='---'>---</option>";
   $('#originSelect').append(blank)
   var line = linesObject[lineChoice]
+
   let stopList = []
   var stops = line.map( (stop) => {
     let stationStop = new Stop(stop)
-    let html = `<option value='${stationStop.id}'>${stationStop.name}</option>`
+
+    let html = `<option value='${stationStop.stopNum}'>${stationStop.name}</option>`
     $('#originSelect').append(html)
     stopList.push(stationStop)
   })
 
-  return new Line(lineChoice, line)
 
   let curLine = new Line(lineChoice, stopList)
   return curLine
@@ -45,8 +50,8 @@ function populateDestinationStops(value, currentLine){
   $('#destinationSelect').append(blank)
 
   var stops = currentLine.stops.map( (stop) => {
-    if (stop.id !== value){
-      let html = `<option value='${stop.id}'>${stop.name}</option>`
+    if (stop.stopNum !== value){
+      let html = `<option value='${stop.stopNum}'>${stop.name}</option>`
       $('#destinationSelect').append(html)
     }
   })

@@ -4,9 +4,11 @@ function getTrip(line, start, stop){
 }
 
 function displayTrip(trip){
+
   let tripHTML = ""
   trip.stops.map((stop) =>{
-  tripHTML += `<div id=stop-${stop.id}><h3>${stop.name}</h3><ul></ul></div><br>`
+
+  tripHTML += `<div id=stop-${stop.stopNum}><h3>${stop.name}</h3><ul></ul></div><br>`
   })
   $('#trip').html(tripHTML)
 }
