@@ -45,16 +45,23 @@ $(function(){
     event.preventDefault()
     $('#chooser').css('visibility', 'visible')
 
-    currentTrip = new Trip(currentLine, origin, destination)
-    displayTrip(currentTrip)
+    if (currentTrip !== undefined){
+      currentTrip = new Trip(currentLine, origin, destination)
+      displayTrip(currentTrip)
+    }
   })
 
 
 
   //capture search data
   $('#chooserButton').click( () => {
+    currentTrip = new Trip(currentLine, origin, destination)
+    displayTrip(currentTrip)
     let searchTerm = $('#foodChoice').val()
     findFood(searchTerm);
     setTimeout(function(){ populateStops() }, 1000)
+
+
   })
+
 })
