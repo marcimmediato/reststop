@@ -30,14 +30,16 @@ $(function(){
 
   // reveal destination selector
   $('#originSelect').change( () => {
+    event.preventDefault()
 
     $('#songRequest').css('visibility', 'hidden')
     $('#songContent').empty()
 
-     let value = parseInt($('#originSelect').val())
-     origin = currentLine.getStop(value)
+    let value = parseInt($('#originSelect').val())
+    origin = currentLine.getStop(value)
+
+    $('#destinationSelect').empty()
     $('#destination').css('visibility','visible')
-    event.preventDefault()
     populateDestinationStops(value, currentLine)
 
     if (currentTrip !== undefined){
@@ -51,6 +53,7 @@ $(function(){
 
     $('#songRequest').css('visibility', 'hidden')
     $('#songContent').empty()
+
 
     let value = parseInt($('#destinationSelect').val())
     destination = currentLine.getStop(value)
@@ -76,7 +79,7 @@ $(function(){
     displayTrip(currentTrip)
 
     let searchTerm = $('#foodChoice').val()
-    findFood(searchTerm);
+    search(searchTerm);
     setTimeout(function(){ populateStops() }, 1000)
 
     $('#songContent').empty()
