@@ -57,6 +57,7 @@ $(function(){
   $('#chooserButton').click( () => {
     debugger
     currentTrip = new Trip(currentLine, origin, destination)
+    debugger
     displayTrip(currentTrip)
     let searchTerm = $('#foodChoice').val()
     findFood(searchTerm);

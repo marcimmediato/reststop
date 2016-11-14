@@ -31,7 +31,12 @@ function populateOriginStops(){
     $('#originSelect').append(html)
     stopList.push(stationStop)
   })
+
   return new Line(lineChoice, line)
+
+  let curLine = new Line(lineChoice, stopList)
+  return curLine
+
 }
 
 function populateDestinationStops(value, currentLine){
