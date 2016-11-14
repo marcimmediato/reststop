@@ -7,10 +7,21 @@ function populateLines(){
   })
 }
 
-function populateOriginStops(){
+function reset() {
+  $('#origin').css('visibility','hidden')
+  $('#destination').css('visibility','hidden')
+  $('#chooser').css('visibility', 'hidden')
+  $('#originSelect').children().remove();
+  $('#destinationSelect').children().remove();
+  $('#trip').children().remove()
+  $('#foodChoice').val(' ')
+  store.restaurants = []
 
+}
+
+function populateOriginStops(){
   let lineChoice = $('#trainSelect').val();
-  let blank = "<option value='---'>---</option>"; 
+  let blank = "<option value='---'>---</option>";
   $('#originSelect').append(blank)
   var line = linesObject[lineChoice]
   let stopList = []
@@ -20,8 +31,7 @@ function populateOriginStops(){
     $('#originSelect').append(html)
     stopList.push(stationStop)
   })
-  let lLine = new Line('L', stopList)
-  return lLine
+  return new Line(lineChoice, line)
 }
 
 function populateDestinationStops(value, currentLine){
