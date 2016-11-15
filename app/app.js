@@ -79,9 +79,7 @@ $(function(){
     displayTrip(currentTrip)
 
     let searchTerm = $('#foodChoice').val()
-    search(searchTerm);
-    setTimeout(function(){ populateStops() }, 1000)
-
+    $.when(search(searchTerm)).then(populateStops);
     $('#songContent').empty()
     $('#songRequest').css('visibility', 'visible')
 
