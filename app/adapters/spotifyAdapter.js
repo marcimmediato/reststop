@@ -19,7 +19,8 @@ function spotifyAdapter(searchTerm){
 function addSong(name, link, uri, artist){
   html = `<b>Listen a tasty song by ${artist}:</b><br><em><a href='${link}' target='_blank'>${name}</a></em>`
   player = `<iframe src="https://embed.spotify.com/?uri=${uri}" frameborder="0" allowtransparency="true"></iframe>`
-  $('#songContent').empty().append(html).append(player)
+  $('#songContent').empty().append(html)
+  $('#songPlayer').empty().append(player)
 }
 
 
