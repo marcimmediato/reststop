@@ -9,6 +9,7 @@
   <body>
 
     <!-- <h2><font face="vulf mono">Welcome to</font></h2> -->
+    <div class="container">
     <h1 > RestStop </h1>
 
     <h3>Select a train</h3>
@@ -16,15 +17,15 @@
 
     </select>
 
+    <div class="row">
+    <div class="four columns">
     <div id="origin">
       <h4>Select an origin stop</h4>
-
       <select id="originSelect">
-
-
       </select>
     </div>
-
+  </div>
+    <div class="six columns">
     <div id="destination">
       <h4>Select a destination stop</h4>
 
@@ -32,18 +33,28 @@
 
       </select>
     </div>
+  </div>
+</div>
+
+
     <div id = "chooser">
       <h4> Enter a category of food and we'll find it for you along the way</h4>
+
       <input id="foodChoice" type="text">
       <button class='btn' id="chooserButton">Search</button>
       <div id="songRequest">
         <button class='btn' id="songButton">Edible/Audible!</button>
+      </div>
+
         <div id="songContent">
         </div>
-      </div>
-    </div>
+        </div>
+
+
+
 
     <div id = "trip"></div>
+  </div>
 
 
     <div id="projectScripts">
