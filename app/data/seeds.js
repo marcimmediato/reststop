@@ -1,4 +1,4 @@
-// Array of all arrays at bottom of file 
+// Array of all arrays at bottom of file
 
 const Train1 = [
   {line: "1", name: "Van Cortlandt Park - 242 St", latLong: [40.889248,-73.898583]},
@@ -90,17 +90,17 @@ const Train2 = [
   {line: "2", name: "Church Av", latLong: [40.650843,-73.949575]},
   {line: "2", name: "Beverly Rd", latLong: [40.645098,-73.948959]},
   {line: "2", name: "Newkirk Av", latLong: [40.639967,-73.948411]},
-  {line: "2", name: "Flatbush Av - Brooklyn College", latLong: [40.632836,-73.947642]},
-  {line: "2", name: "Nostrand Av", latLong: [40.669847,-73.950466]},
-  {line: "2", name: "Kingston Av", latLong: [40.669399,-73.942161]},
-  {line: "2", name: "Crown Hts - Utica Av", latLong: [40.668897,-73.932942]},
-  {line: "2", name: "Sutter Av - Rutland Rd", latLong: [40.664717,-73.92261]},
-  {line: "2", name: "Saratoga Av", latLong: [40.661453,-73.916327]},
-  {line: "2", name: "Rockaway Av", latLong: [40.662549,-73.908946]},
-  {line: "2", name: "Junius St", latLong: [40.663515,-73.902447]},
-  {line: "2", name: "Pennsylvania Av", latLong: [40.664635,-73.894895]},
-  {line: "2", name: "Van Siclen Av", latLong: [40.665449,-73.889395]},
-  {line: "2", name: "New Lots Av", latLong: [40.666235,-73.884079]}
+  {line: "2", name: "Flatbush Av - Brooklyn College", latLong: [40.632836,-73.947642]}
+  // {line: "2", name: "Nostrand Av", latLong: [40.669847,-73.950466]},
+  // {line: "2", name: "Kingston Av", latLong: [40.669399,-73.942161]},
+  // {line: "2", name: "Crown Hts - Utica Av", latLong: [40.668897,-73.932942]},
+  // {line: "2", name: "Sutter Av - Rutland Rd", latLong: [40.664717,-73.92261]},
+  // {line: "2", name: "Saratoga Av", latLong: [40.661453,-73.916327]},
+  // {line: "2", name: "Rockaway Av", latLong: [40.662549,-73.908946]},
+  // {line: "2", name: "Junius St", latLong: [40.663515,-73.902447]},
+  // {line: "2", name: "Pennsylvania Av", latLong: [40.664635,-73.894895]},
+  // {line: "2", name: "Van Siclen Av", latLong: [40.665449,-73.889395]},
+  // {line: "2", name: "New Lots Av", latLong: [40.666235,-73.884079]}
 
 ];
 
@@ -176,7 +176,7 @@ const Train4 = [
   {line: "4", name: "Nevins St", latLong: [40.688246,-73.980492]},
   {line: "4", name: "Atlantic Av - Barclays Ctr", latLong: [40.684359,-73.977666]},
   {line: "4", name: "Franklin Av", latLong: [40.670682,-73.958131]},
-  {line: "4", name: "Crown Hts - Utica Av", latLong: [40.668897,-73.932942]},
+  {line: "4", name: "Crown Hts - Utica Av", latLong: [40.668897,-73.932942]}
 ];
 
 const Train5 = [
@@ -186,6 +186,26 @@ const Train5 = [
   {line: "5", name: "Pelham Pkwy", latLong: [40.858985,-73.855359]},
   {line: "5", name: "Morris Park", latLong: [40.854364,-73.860495]},
   {line: "5", name: "E 180 St", latLong: [40.841894,-73.873488]},
+  {line: "5", name: "125 St", latLong: [40.804138,-73.937594]},
+  {line: "5", name: "86 St", latLong: [40.779492,-73.955589]},
+  {line: "5", name: "59 St", latLong: [40.762526,-73.967967]},
+  {line: "5", name: "Grand Central - 42 St", latLong: [40.751776,-73.976848]},
+  {line: "5", name: "14 St - Union Sq", latLong: [40.734673,-73.989951]},
+  {line: "5", name: "Brooklyn Bridge - City Hall", latLong: [40.713065,-74.004131]},
+  {line: "5", name: "Fulton St", latLong: [40.710368,-74.009509]},
+  {line: "5", name: "Wall St", latLong: [40.707557,-74.011862]},
+  {line: "5", name: "Bowling Green", latLong: [40.704817,-74.014065]},
+  {line: "5", name: "Borough Hall", latLong: [40.692404,-73.990151]},
+  {line: "5", name: "Nevins St", latLong: [40.688246,-73.980492]},
+  {line: "5", name: "Atlantic Av - Barclays Ctr", latLong: [40.684359,-73.977666]},
+  {line: "5", name: "Franklin Av", latLong: [40.670682,-73.958131]},
+  {line: "5", name: "President St", latLong: [40.667883,-73.950683]},
+  {line: "5", name: "Sterling St", latLong: [40.662742,-73.95085]},
+  {line: "5", name: "Winthrop St", latLong: [40.656652,-73.9502]},
+  {line: "5", name: "Church Av", latLong: [40.650843,-73.949575]},
+  {line: "5", name: "Beverly Rd", latLong: [40.645098,-73.948959]},
+  {line: "5", name: "Newkirk Av", latLong: [40.639967,-73.948411]},
+  {line: "5", name: "Flatbush Av - Brooklyn College", latLong: [40.632836,-73.947642]}
 ];
 
 const Train6 = [
@@ -311,22 +331,34 @@ const TrainA = [
 
 
 const TrainB = [
-  {line: "B", name: "21 St - Queensbridge", latLong: [40.754203,-73.942836]},
-  {line: "B", name: "Roosevelt Island", latLong: [40.759145,-73.95326]},
-  {line: "B", name: "Lexington Av/63 St", latLong: [40.764629,-73.966113]},
-  {line: "B", name: "57 St", latLong: [40.763972,-73.97745]},
-  {line: "B", name: "9 Av", latLong: [40.646292,-73.994324]},
-  {line: "B", name: "Fort Hamilton Pkwy", latLong: [40.640914,-73.994304]},
-  {line: "B", name: "50 St", latLong: [40.63626,-73.994791]},
-  {line: "B", name: "55 St", latLong: [40.631435,-73.995476]},
-  {line: "B", name: "62 St", latLong: [40.626472,-73.996895]},
-  {line: "B", name: "71 St", latLong: [40.619589,-73.998864]},
-  {line: "B", name: "79 St", latLong: [40.613501,-74.00061]},
-  {line: "B", name: "18 Av", latLong: [40.607954,-74.001736]},
-  {line: "B", name: "20 Av", latLong: [40.604556,-73.998168]},
-  {line: "B", name: "Bay Pkwy", latLong: [40.601875,-73.993728]},
-  {line: "B", name: "25 Av", latLong: [40.597704,-73.986829]},
-  {line: "B", name: "Bay 50 St", latLong: [40.588841,-73.983765]}
+  {line: "B", name: "145 St", latLong: [40.824783,-73.944216]},
+  {line: "B", name: "135 St", latLong: [40.817894,-73.947649]},
+  {line: "B", name: "125 St", latLong: [40.811109,-73.952343]},
+  {line: "B", name: "116 St", latLong: [40.805085,-73.954882]},
+  {line: "B", name: "Cathedral Pkwy (110 St)", latLong: [40.800603,-73.958161]},
+  {line: "B", name: "103 St", latLong: [40.796092,-73.961454]},
+  {line: "B", name: "96 St", latLong: [40.791642,-73.964696]},
+  {line: "B", name: "86 St", latLong: [40.785868,-73.968916]},
+  {line: "B", name: "81 St - Museum of Natural History", latLong: [40.781433,-73.972143]},
+  {line: "B", name: "72 St", latLong: [40.775594,-73.97641]},
+  {line: "B", name: "59 St - Columbus Circle", latLong: [40.768296,-73.981736]},
+  {line: "B", name: "7 Av", latLong: [40.762862,-73.981637]},
+  {line: "B", name: "47-50 Sts - Rockefeller Ctr", latLong: [40.758663,-73.981329]},
+  {line: "B", name: "42 St - Bryant Pk", latLong: [40.754222,-73.984569]},
+  {line: "B", name: "34 St - Herald Sq", latLong: [40.749719,-73.987823]},
+  {line: "B", name: "W 4 St", latLong: [40.732338,-74.000495]},
+  {line: "B", name: "Broadway-Lafayette St", latLong: [40.725297,-73.996204]},
+  {line: "B", name: "Grand St", latLong: [40.718267,-73.993753]},
+  {line: "B", name: "DeKalb Av", latLong: [40.690635,-73.981824]},
+  {line: "B", name: "Atlantic Av - Barclays Ctr", latLong: [40.683666,-73.97881]},
+  {line: "B", name: "7 Av", latLong: [40.67705,-73.972367]},
+  {line: "B", name: "Prospect Park", latLong: [40.661614,-73.962246]},
+  {line: "B", name: "Church Av", latLong: [40.650527,-73.962982]},
+  {line: "B", name: "Newkirk Plaza", latLong: [40.635082,-73.962793]},
+  {line: "B", name: "Kings Hwy", latLong: [40.60867,-73.957734]},
+  {line: "B", name: "Sheepshead Bay", latLong: [40.586896,-73.954155]},
+  {line: "B", name: "Brighton Beach", latLong: [40.577621,-73.961376]}
+
 ];
 
 
@@ -381,9 +413,19 @@ const TrainF = [
   {line: "F", name: "Briarwood - Van Wyck Blvd", latLong: [40.709179,-73.820574]},
   {line: "F", name: "Kew Gardens - Union Tpke", latLong: [40.714441,-73.831008]},
   {line: "F", name: "75 Av", latLong: [40.718331,-73.837324]},
-  {line: "F", name: "Court Sq", latLong: [40.747846,-73.946]},
-  {line: "F", name: "Lexington Av/53 St", latLong: [40.757552,-73.969055]},
-  {line: "F", name: "5 Av/53 St", latLong: [40.760167,-73.975224]},
+  {line: "F", name: "Forest Hills - 71 Av", latLong: [40.721691,-73.844521]},
+  {line: "F", name: "Jackson Hts - Roosevelt Av", latLong: [40.746644,-73.891338]},
+  {line: "F", name: "21 St - Queensbridge", latLong: [40.754203,-73.942836]},
+  {line: "F", name: "Roosevelt Island", latLong: [40.759145,-73.95326]},
+  {line: "F", name: "Lexington Av/63 St", latLong: [40.764629,-73.966113]},
+  {line: "F", name: "57 St", latLong: [40.763972,-73.97745]},
+  {line: "F", name: "47-50 Sts - Rockefeller Ctr", latLong: [40.758663,-73.981329]},
+  {line: "F", name: "42 St - Bryant Pk", latLong: [40.754222,-73.984569]},
+  {line: "F", name: "34 St - Herald Sq", latLong: [40.749719,-73.987823]},
+  {line: "F", name: "23 St", latLong: [40.742878,-73.992821]},
+  {line: "F", name: "14 St", latLong: [40.738228,-73.996209]},
+  {line: "F", name: "W 4 St", latLong: [40.732338,-74.000495]},
+  {line: "F", name: "Broadway-Lafayette St", latLong: [40.725297,-73.996204]},
   {line: "F", name: "2 Av", latLong: [40.723402,-73.989938]},
   {line: "F", name: "Delancey St", latLong: [40.718611,-73.988114]},
   {line: "F", name: "East Broadway", latLong: [40.713715,-73.990173]},
@@ -409,22 +451,22 @@ const TrainF = [
 ];
 
 const TrainG = [
-  {line: "G", name: "Jamaica Center - Parsons/Archer", latLong: [40.702147,-73.801109]},
-  {line: "G", name: "Sutphin Blvd - Archer Av - JFK Airport", latLong: [40.700486,-73.807969]},
-  {line: "G", name: "Jamaica - Van Wyck", latLong: [40.702566,-73.816859]},
-  {line: "G", name: "Forest Hills - 71 Av", latLong: [40.721691,-73.844521]},
-  {line: "G", name: "67 Av", latLong: [40.726523,-73.852719]},
-  {line: "G", name: "63 Dr - Rego Park", latLong: [40.729846,-73.861604]},
-  {line: "G", name: "Woodhaven Blvd", latLong: [40.733106,-73.869229]},
-  {line: "G", name: "Grand Av - Newtown", latLong: [40.737015,-73.877223]},
-  {line: "G", name: "Elmhurst Av", latLong: [40.742454,-73.882017]},
-  {line: "G", name: "Jackson Hts - Roosevelt Av", latLong: [40.746644,-73.891338]},
-  {line: "G", name: "65 St", latLong: [40.749669,-73.898453]},
-  {line: "G", name: "Northern Blvd", latLong: [40.752885,-73.906006]},
-  {line: "G", name: "46 St", latLong: [40.756312,-73.913333]},
-  {line: "G", name: "Steinway St", latLong: [40.756879,-73.92074]},
-  {line: "G", name: "36 St", latLong: [40.752039,-73.928781]},
-  {line: "G", name: "Queens Plaza", latLong: [40.748973,-73.937243]},
+  // {line: "G", name: "Jamaica Center - Parsons/Archer", latLong: [40.702147,-73.801109]},
+  // {line: "G", name: "Sutphin Blvd - Archer Av - JFK Airport", latLong: [40.700486,-73.807969]},
+  // {line: "G", name: "Jamaica - Van Wyck", latLong: [40.702566,-73.816859]},
+  // {line: "G", name: "Forest Hills - 71 Av", latLong: [40.721691,-73.844521]},
+  // {line: "G", name: "67 Av", latLong: [40.726523,-73.852719]},
+  // {line: "G", name: "63 Dr - Rego Park", latLong: [40.729846,-73.861604]},
+  // {line: "G", name: "Woodhaven Blvd", latLong: [40.733106,-73.869229]},
+  // {line: "G", name: "Grand Av - Newtown", latLong: [40.737015,-73.877223]},
+  // {line: "G", name: "Elmhurst Av", latLong: [40.742454,-73.882017]},
+  // {line: "G", name: "Jackson Hts - Roosevelt Av", latLong: [40.746644,-73.891338]},
+  // {line: "G", name: "65 St", latLong: [40.749669,-73.898453]},
+  // {line: "G", name: "Northern Blvd", latLong: [40.752885,-73.906006]},
+  // {line: "G", name: "46 St", latLong: [40.756312,-73.913333]},
+  // {line: "G", name: "Steinway St", latLong: [40.756879,-73.92074]},
+  // {line: "G", name: "36 St", latLong: [40.752039,-73.928781]},
+  // {line: "G", name: "Queens Plaza", latLong: [40.748973,-73.937243]},
   {line: "G", name: "Court Sq", latLong: [40.746554,-73.943832]},
   {line: "G", name: "21 St", latLong: [40.744065,-73.949724]},
   {line: "G", name: "Greenpoint Av", latLong: [40.731352,-73.954449]},
@@ -544,10 +586,35 @@ const TrainM = [
 ];
 
 const TrainQ = [
+  {line: "Q", name: "57 St - 7 Av", latLong: [40.764664,-73.980658]},
+  {line: "Q", name: "49 St", latLong: [40.759901,-73.984139]},
+  {line: "Q", name: "Times Sq - 42 St", latLong: [40.754672,-73.986754]},
+  {line: "Q", name: "34 St - Herald Sq", latLong: [40.749567,-73.98795]},
+  {line: "R", name: "14 St - Union Sq", latLong: [40.735736,-73.990568]},
   {line: "Q", name: "Canal St", latLong: [40.718383,-74.00046]},
   {line: "Q", name: "72ST - 2 AV", latLong: [40.768799,-73.958424]},
   {line: "Q", name: "86 ST - 2 Av", latLong: [40.777891,-73.951787]},
-  {line: "Q", name: "96 ST - 2 AV", latLong: [40.784318,-73.947152]}
+  {line: "Q", name: "96 ST - 2 AV", latLong: [40.784318,-73.947152]},
+  {line: "Q", name: "DeKalb Av", latLong: [40.690635,-73.981824]},
+  {line: "Q", name: "Atlantic Av - Barclays Ctr", latLong: [40.683666,-73.97881]},
+  {line: "Q", name: "7 Av", latLong: [40.67705,-73.972367]},
+  {line: "Q", name: "Prospect Park", latLong: [40.661614,-73.962246]},
+  {line: "Q", name: "Parkside Av", latLong: [40.655292,-73.961495]},
+  {line: "Q", name: "Church Av", latLong: [40.650527,-73.962982]},
+  {line: "Q", name: "Beverley Rd", latLong: [40.644031,-73.964492]},
+  {line: "Q", name: "Cortelyou Rd", latLong: [40.640927,-73.963891]},
+  {line: "Q", name: "Newkirk Plaza", latLong: [40.635082,-73.962793]},
+  {line: "Q", name: "Avenue H", latLong: [40.62927,-73.961639]},
+  {line: "Q", name: "Avenue J", latLong: [40.625039,-73.960803]},
+  {line: "Q", name: "Avenue M", latLong: [40.617618,-73.959399]},
+  {line: "Q", name: "Kings Hwy", latLong: [40.60867,-73.957734]},
+  {line: "Q", name: "Avenue U", latLong: [40.5993,-73.955929]},
+  {line: "Q", name: "Neck Rd", latLong: [40.595246,-73.955161]},
+  {line: "Q", name: "Sheepshead Bay", latLong: [40.586896,-73.954155]},
+  {line: "Q", name: "Brighton Beach", latLong: [40.577621,-73.961376]},
+  {line: "Q", name: "Ocean Pkwy", latLong: [40.576312,-73.968501]},
+  {line: "Q", name: "W 8 St - NY Aquarium", latLong: [40.576127,-73.975939]},
+  {line: "Q", name: "Coney Island - Stillwell Av", latLong: [40.577422,-73.981233]}
 ];
 
 const TrainR = [
