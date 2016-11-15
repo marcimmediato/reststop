@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" type='text/css' href='style.css'>
-    <link rel="stylesheet" type='text/css' href='skeleton.css'>
-    <meta charset="UTF-8">
-    <title></title>
-  </head>
-  <body>
+<head>
+  <link rel="stylesheet" type='text/css' href='style.css'>
+  <link rel="stylesheet" type='text/css' href='skeleton.css'>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
 
-    <!-- <h2><font face="vulf mono">Welcome to</font></h2> -->
-    <div class="container">
+  <!-- <h2><font face="vulf mono">Welcome to</font></h2> -->
+  <div class="container">
     <h1 > RestStop </h1>
 
     <h3>Select a train</h3>
@@ -18,64 +18,65 @@
     </select>
 
     <div class="row">
-    <div class="four columns">
-    <div id="origin">
-      <h4>Select an origin stop</h4>
-      <select id="originSelect">
-      </select>
-    </div>
-  </div>
-    <div class="six columns">
-    <div id="destination">
-      <h4>Select a destination stop</h4>
+      <div class="four columns">
+        <div id="origin">
+          <h4>Select an origin stop</h4>
+          <select id="originSelect">
+          </select>
+        </div>
+      </div>
+      <div class="six columns">
+        <div id="destination">
+          <h4>Select a destination stop</h4>
 
-      <select id="destinationSelect">
+          <select id="destinationSelect">
 
-      </select>
+          </select>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
     <div id = "chooser">
-      <h4> Enter a category of food and we'll find it for you along the way</h4>
-
-      <input id="foodChoice" type="text">
-      <button class='btn' id="chooserButton">Search</button>
-      <div id="songRequest">
-        <button class='btn' id="songButton">Edible/Audible!</button>
-      </div>
-
-        <div id="songContent">
-          <div id="songPlayer">
-          </div>
-        </div>
-        </div>
-
-
-
+       <h4> Enter a category of food and we'll find it for you along the way</h4>
+       <div class="row">
+        <div class="four columns">
+       <input id="foodChoice" type="text">
+       <button class='btn' id="chooserButton">Search</button>
+       <div id="songRequest">
+         <button class='btn' id="songButton">Edible/Audible!</button>
+         <div id="songContent">
+         </div>
+       </div>
+     </div>
+        <div class="six columns">
+           <div id="songPlayer">
+           </div>
+         </div>
+         </div>
+       </div>
 
     <div id = "trip"></div>
   </div>
 
 
-    <div id="projectScripts">
-      <script src="./app/jquery-3.1.1.min.js"> </script>
-      <script src="./app/app.js"> </script>
-      <script src="./app/data/seeds.js"> </script>
-      <script src="./app/data/store.js"> </script>
-      <script src="./app/adapters/fourSquareAdapter.js"> </script>
-      <script src="./app/adapters/spotifyAdapter.js"> </script>
-      <script src="./app/controllers/searchesController.js"> </script>
-      <script src="./app/controllers/trainInfoController.js"> </script>
-      <script src="./app/controllers/restaurantsController.js"> </script>
-      <script src="./app/controllers/tripsController.js"> </script>
-      <script src="./app/models/line.js"> </script>
-      <script src="./app/models/restaurant.js"> </script>
-      <script src="./app/models/stop.js"> </script>
-      <script src="./app/models/trip.js"> </script>
-      <script src="./authCreds.js"> </script>
-    </div>
-  </body>
+  <div id="projectScripts">
+    <script src="./app/jquery-3.1.1.min.js"> </script>
+    <script src="./app/app.js"> </script>
+    <script src="./app/data/seeds.js"> </script>
+    <script src="./app/data/store.js"> </script>
+    <script src="./app/adapters/fourSquareAdapter.js"> </script>
+    <script src="./app/adapters/spotifyAdapter.js"> </script>
+    <script src="./app/controllers/searchesController.js"> </script>
+    <script src="./app/controllers/trainInfoController.js"> </script>
+    <script src="./app/controllers/restaurantsController.js"> </script>
+    <script src="./app/controllers/tripsController.js"> </script>
+    <script src="./app/models/line.js"> </script>
+    <script src="./app/models/restaurant.js"> </script>
+    <script src="./app/models/stop.js"> </script>
+    <script src="./app/models/trip.js"> </script>
+    <script src="./authCreds.js"> </script>
+  </div>
+</body>
 
 </html>
